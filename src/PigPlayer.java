@@ -58,8 +58,8 @@ class PigGame {
     private boolean gameOver;
 
     public PigGame() {
-        player1 = new PigPlayer("Player 1");
-        player2 = new PigPlayer("Player 2");
+        player1 = new PigPlayer("Stan");
+        player2 = new PigPlayer("Ollie");
         gameOver = false;
     }
 
@@ -72,7 +72,7 @@ class PigGame {
             }
             player2.takeTurn();
             if (player2.getScore() >= 100) {
-                System.out.println("Player 2 wins!");
+                System.out.println("Ollie wins!");
                 gameOver = true;
                 break;
             }
